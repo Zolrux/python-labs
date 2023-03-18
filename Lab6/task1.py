@@ -1,3 +1,5 @@
+import random
+
 def output_matrix(matrix: list):
     print('-' * len(str(matrix[0]).strip().replace(",", "")))
     for row in matrix:
@@ -29,10 +31,15 @@ def get_same_counters(lst: list):
             
     return count_same_lst
 
-matrix = [[1, 1, 1, 3, 3, 4, 5], 
-          [4, 6, 2, 4, 0, 6, 0], 
-          [8, 8, 4, 8, 0, 1, 4], 
-          [2, 2, 2, 2, 4, 2, 0]]
+matrix = []
+
+row_len = random.randint(5, 8)
+col_len = random.randint(5, 8)
+
+for i in range(row_len):
+    matrix.append([])
+    for j in range(col_len):
+        matrix[i].append(random.randint(0, 9))
 
 output_matrix(matrix)
 
