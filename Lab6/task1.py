@@ -6,31 +6,48 @@ def output_matrix(matrix: list):
             print(el, end="|")
          print(f"\n{'-' * len(str_lst)}")
 
+
 def init_same_el_list(matrix: list):
-    same_el_list = []
+    info = {}
 
     for i in range(len(matrix)):
-        counter_duplicates = 0
-        row_duplicates = set(matrix[i])
-        if len(matrix[i]) != len(row_duplicates):
-            counter_duplicates = len(matrix[i]) - len(row_duplicates)
-            same_el_list.append(counter_duplicates)
-        else:
-            same_el_list.append(0)
+        key_dict = f"row_{i}"
+        info[key_dict] = {}
+        for el in matrix[i]:
+            key = f"el_{el}"
+            count = matrix[i].count(el)
+            if count > 1 and key not in info[key_dict]:
+                info[key_dict][key] = count
+    return list(info.values())
 
-    return same_el_list
+def get_same_counters(lst: list):
+    count_same_lst = []
+    for dct in lst:
+        if isinstance(dct, dict):
+            count = len(list(dct.keys()))
+            count_same_lst.append(count)
+            
+    return count_same_lst
 
-matrix = [[1, 1, 1, 3], [4, 6, 2, 6], [8, 8, 4, 8], [2, 2, 2, 2]]
+matrix = [[1, 1, 1, 3, 3, 4, 5], 
+          [4, 6, 2, 4, 0, 6, 0], 
+          [8, 8, 4, 8, 0, 1, 4], 
+          [2, 2, 2, 2, 4, 2, 0]]
 
 output_matrix(matrix)
 
 same_lst = init_same_el_list(matrix)
+same_lst_dct = get_same_counters(same_lst)
 
 print("\nКоличество повторяющихся элементов в строках:")
 
-for el in same_lst:
-    print(el, end = "|")
+min_el = same_lst_dct[0]
 
-min_count_duplicates_row = same_lst.index(min(same_lst))
+for el in same_lst_dct:
+    print(el, end = "|")
+    if el > 0 and el < min_el:
+        min_el = el
+
+min_count_duplicates_row = same_lst_dct.index(min_el)
 
 print(f"\n\nНомер строки (начиная с 0): {min_count_duplicates_row}")
