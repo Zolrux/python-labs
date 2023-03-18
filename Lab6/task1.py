@@ -1,12 +1,10 @@
-import random
-
 def output_matrix(matrix: list):
-    print('―' * len(str(matrix[0]).strip().replace(",", "")))
+    print('-' * len(str(matrix[0]).strip().replace(",", "")))
     for row in matrix:
          str_lst = str(row).strip().replace(",", "")
          for el in row:
             print(el, end="|")
-         print(f"\n{'―' * len(str_lst)}")
+         print(f"\n{'-' * len(str_lst)}")
 
 def init_same_el_list(matrix: list):
     same_el_list = []
@@ -22,15 +20,7 @@ def init_same_el_list(matrix: list):
 
     return same_el_list
 
-matrix = []
-
-row_len = random.randint(5, 10)
-col_len = random.randint(5, 10)
-
-for i in range(row_len):
-    matrix.append([])
-    for j in range(col_len):
-        matrix[i].append(random.randint(1, 5))
+matrix = [[1, 1, 1, 3], [4, 6, 2, 6], [8, 8, 4, 8], [2, 2, 2, 2]]
 
 output_matrix(matrix)
 
