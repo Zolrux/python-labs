@@ -1,0 +1,101 @@
+[
+{ 
+"country":"AU","txt":"Австралійський долар","rate":24.0841,"cc":"AUD"
+ }
+,{ 
+"country":"CA","txt":"Канадський долар","rate":26.7931,"cc":"CAD"
+ }
+,{ 
+"country":"CN","txt":"Юань Женьміньбі","rate":5.2851,"cc":"CNY"
+ }
+,{ 
+"country":"CZ","txt":"Чеська крона","rate":1.7084,"cc":"CZK"
+ }
+,{ 
+"country":"DK","txt":"Данська крона","rate":5.384,"cc":"DKK"
+ }
+,{ 
+"country":"HK","txt":"Гонконгівський долар","rate":4.6585,"cc":"HKD"
+ }
+,{ 
+"country":"HU","txt":"Форинт","rate":0.107365,"cc":"HUF"
+ }
+,{ 
+"country":"IN","txt":"Індійська рупія","rate":0.44684,"cc":"INR"
+ }
+,{ 
+ "country":"ID","txt":"Рупія","rate":0.0024924,"cc":"IDR"
+ }
+,{ 
+"country":"IL","txt":"Новий ізраїльський шекель","rate":10.0535,"cc":"ILS"
+ }
+,{ 
+"country":"JP","txt":"Єна","rate":0.26861,"cc":"JPY"
+ }
+,{ 
+"country":"KZ","txt":"Теньге","rate":0.080906,"cc":"KZT"
+ }
+,{ 
+"country":"KR","txt":"Вона","rate":0.027317,"cc":"KRW"
+ }
+,{ 
+"country":"MX","txt":"Мексиканське песо","rate":2.0251,"cc":"MXN"
+ }
+,{ 
+"country":"MD","txt":"Молдовський лей","rate":2.0348,"cc":"MDL"
+ }
+,{ 
+"country":"NZ","txt":"Новозеландський долар","rate":22.4915,"cc":"NZD"
+ }
+,{ 
+"country":"NO","txt":"Норвезька крона","rate":3.4095,"cc":"NOK"
+ }
+,{ 
+"country":"RU","txt":"Російський рубль","rate":0.46041,"cc":"RUB"
+ }
+,{ 
+"country":"SG","txt":"Сінгапурський долар","rate":27.3471,"cc":"SGD"
+ }
+,{ 
+"country":"ZA","txt":"Ренд","rate":1.992,"cc":"ZAR"
+ }
+,{ 
+"country":"SE","txt":"Шведська крона","rate":3.5345,"cc":"SEK"
+ }
+,{ 
+"country":"CH","txt":"Швейцарський франк","rate":40.8018,"cc":"CHF"
+ }
+,{ 
+ "country":"EG","txt":"Єгипетський фунт","rate":1.1836,"cc":"EGP"
+ }
+,{ 
+"country":"GB","txt":"Фунт стерлінгів","rate":45.6065,"cc":"GBP"
+ }
+,{ 
+"country":"US","txt":"Долар США","rate":36.5686,"cc":"USD"
+ }
+,{ 
+"country":"BY","txt":"Білоруський рубль","rate":13.2919,"cc":"BYN"
+ }
+,{ 
+"country":"AZ","txt":"Азербайджанський манат","rate":21.549,"cc":"AZN"
+ }
+,{ 
+"country":"RO","txt":"Румунський лей","rate":8.1397,"cc":"RON"
+ }
+,{ 
+"country":"TR","txt":"Турецька ліра","rate":1.8799,"cc":"TRY"
+ }
+,{
+"country":"BG","txt":"Болгарський лев","rate":20.5315,"cc":"BGN"
+ }
+,{ 
+"country":"EU","txt":"Євро","rate":40.1322,"cc":"EUR"
+ }
+,{ 
+"country":"PL","txt":"Злотий","rate":8.7577,"cc":"PLN"
+ }
+,{ 
+"country":"BR","txt":"Бразильський реал","rate":7.3434,"cc":"BRL"
+ }
+]
